@@ -1,0 +1,3 @@
+FROM nginx:1.24.0
+COPY html /usr/share/nginx/html
+RUN date > /usr/share/nginx/html/buildtime.txt
